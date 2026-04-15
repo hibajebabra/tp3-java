@@ -7,7 +7,7 @@ public class Produit {
     private double prix;
     private int quantite;
 
-    // 🔹 Constructeur
+
     public Produit(int id, String nom, String description, double prix, int quantite) {
         this.id = id;
         this.nom = nom;
@@ -16,20 +16,20 @@ public class Produit {
         this.quantite = quantite;
     }
 
-    // 🔹 Getters
+    
     public int getId() { return id; }
     public String getNom() { return nom; }
     public String getDescription() { return description; }
     public double getPrix() { return prix; }
     public int getQuantite() { return quantite; }
 
-    // 🔹 Setters
+    
     public void setNom(String nom) { this.nom = nom; }
     public void setDescription(String description) { this.description = description; }
     public void setPrix(double prix) { this.prix = prix; }
     public void setQuantite(int quantite) { this.quantite = quantite; }
 
-    // 🔹 Affichage
+  
     public void afficher() {
         System.out.println("ID: " + id + " | Nom: " + nom +
                 " | Prix: " + prix + " | Quantité: " + quantite);
