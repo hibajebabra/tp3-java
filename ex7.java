@@ -13,26 +13,26 @@ public class ex7 {
         gp.ajouterProd(p2);
 
         
-        System.out.println("\nListe des produits :");
+        System.out.println("Liste des produits :");
         gp.afficherTous();
 
         
-        System.out.println("\nModification du produit ID=1");
+        System.out.println("Modification du produit ID=1");
         gp.modifierProd(1, "PC Gamer", 10000, 3);
 
        
-        System.out.println("\nRecherche du produit ID=1");
+        System.out.println("Recherche du produit ID=1");
         Produit p = gp.getProduitByID(1);
         if (p != null) {
             p.afficher();
         }
 
         
-        System.out.println("\nSuppression du produit ID=2");
+        System.out.println("Suppression du produit ID=2");
         gp.supprimerProd(2);
 
        
-        System.out.println("\nListe finale :");
+        System.out.println("Liste finale :");
         gp.afficherTous();
     }
 }
